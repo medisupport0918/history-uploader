@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>역사 재현소 업로더 · History Recreated Uploader</title>
+<style>
+  :root { --ink:#0E0D0B; --amber:#E8A33D; --paper:#F6F1E7; --muted:#6B645A; --line:#E2D9C8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 -apple-system, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+  header { background:var(--ink); color:var(--paper); padding:56px 20px 44px; }
+  .wrap { max-width:760px; margin:0 auto; }
+  .kicker { color:var(--amber); font-weight:700; letter-spacing:.12em; font-size:13px; }
+  h1 { font-size:34px; line-height:1.25; margin:10px 0 8px; }
+  h2 { font-size:20px; margin:36px 0 8px; }
+  .en { color:#BDB4A4; font-size:15px; }
+  main { padding:8px 20px 56px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin-top:16px; }
+  .yt { display:inline-flex; align-items:center; gap:8px; font-weight:700; }
+  .yt svg { width:28px; height:20px; }
+  a { color:#9A5B00; }
+  ul { padding-left:20px; }
+  footer { border-top:1px solid var(--line); padding:24px 20px; color:var(--muted); font-size:14px; }
+  nav a { margin-right:16px; font-weight:700; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">MEDISUPPORT · INTERNAL TOOL</div>
+    <h1>역사 재현소 업로더</h1>
+    <div class="en">History Recreated Uploader — an internal upload tool for the YouTube channel “역사 재현소”, operated by MEDISUPPORT Co., Ltd.</div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <nav style="margin-top:24px"><a href="privacy.html">개인정보처리방침 · Privacy Policy</a><a href="terms.html">서비스 약관 · Terms of Service</a></nav>
+
+    <h2>무엇을 하는 도구인가요? / What it does</h2>
+    <p>(주)메디써포트가 직접 제작한 역사 다큐멘터리 영상을, 회사가 운영하는 유튜브 채널 <b>역사 재현소</b>에 업로드하는 사내 도구입니다. 외부 사용자에게 제공하거나 판매하지 않습니다.</p>
+    <p class="en" style="color:var(--muted)">This tool uploads history documentary videos produced by MEDISUPPORT to the company's own YouTube channel. It is used only by our staff and is not offered or sold to third parties.</p>
+
+    <div class="card">
+      <div class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l7.5-4.5z" fill="#fff"/></svg> YouTube API Services</div>
+      <p style="margin:8px 0 0">이 도구는 YouTube API 서비스를 사용합니다. 사용자는 <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube 서비스 약관</a>에 동의하는 것으로 간주되며, <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>이 적용됩니다.</p>
+      <p class="en" style="color:var(--muted);margin:6px 0 0">This tool uses YouTube API Services. By using it you agree to the YouTube Terms of Service, and the Google Privacy Policy applies.</p>
+    </div>
+
+    <h2>사용하는 기능 / API usage</h2>
+    <ul>
+      <li><code>videos.insert</code> — 완성된 영상을 비공개(private)로 업로드 / upload finished videos as private</li>
+      <li><code>thumbnails.set</code> — 영상 썸네일 등록 / set the video thumbnail</li>
+      <li><code>channels.list (mine=true)</code> — 연결된 채널 확인 / confirm the connected channel</li>
+    </ul>
+    <p>공개 여부와 공개 시점은 담당자가 YouTube 스튜디오에서 직접 확인한 뒤 정합니다. 다른 사람의 채널이나 데이터에는 접근하지 않습니다.</p>
+    <p class="en" style="color:var(--muted)">Publishing is always decided by a person in YouTube Studio. The tool never accesses other users' channels or data.</p>
+
+    <h2>운영 채널 / Channel</h2>
+    <p><a href="https://www.youtube.com/channel/UClPTxMOTBBUD9lpsS17zCOg" target="_blank" rel="noopener">역사 재현소 (YouTube)</a> · 회사 웹사이트 <a href="https://medisupport.kr/" target="_blank" rel="noopener">medisupport.kr</a></p>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    (주)메디써포트 · 대표 박소영 · 사업자등록번호 482-88-03323 · 서울특별시 마포구 백범로 40-3<br>
+    문의 · Contact: <a href="mailto:medisupport0918@gmail.com">medisupport0918@gmail.com</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="terms.html">서비스 약관</a>
+  </div>
+</footer>
+</body>
+</html>
